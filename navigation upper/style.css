@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.upper{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.right{
+    display: flex;
+    justify-content: space-between;
+}
+.f{
+    padding: 0.3rem 0.75rem;
+    border-radius: 3px;
+    font-weight: bold;
+    transition: all 1s;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.f:hover{
+    background-color: white;
+    color: black;
+}
+.clicked{
+    background-color: white;
+    color: black;
+    
+}
+main{
+    font-weight: bold;
+    font-size: clamp(0.5rem, 1vw + 0.5rem, 3.5rem);
+    
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+.hamburger{
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    position: relative;
+    display: none;
+}
+.hamburger::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    top: -10px;
+}
+.hamburger::before{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    top: 10px;
+}
+#checkbox{
+    display: none;
+}
+
+@media (max-width:920px){
+    .upper{
+        flex-direction: column;
+    }
+    .right{
+        flex-direction: column;
+        margin-top: 10px;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        transition: all 1s;
+        background-color: black;
+        top: 50px;
+        left: -1000px;
+        transition: all 0.5s;
+    }
+    .f{
+        margin-bottom: 20px;
+        font-size: 2rem;
+
+    }
+    .hamburger{
+        display: block;
+        position: absolute;
+        top: 15px;
+    }
+    .div-ham{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        right: 10px;
+    }
+    .left{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    #checkbox:checked ~ .right{
+        left: 0px;
+    }
+    #checkbox:checked + .hamburger{
+        background-color: blue;
+    }
+}

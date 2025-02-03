@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.up{
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 450px;
+}
+
+.pic{
+    width: 250px;
+    height: 400px;
+    position: absolute;
+    top: 20%;
+}
+.pic img{
+    width: 100%;
+    border: 3px solid white;
+}
+.p1{
+    left: 100px;
+
+}
+#img1:checked ~ .p1{
+    animation: anim 1s forwards ;
+}
+#img2:checked ~ .p2{
+    animation: anim 1s forwards ;
+}
+#img3:checked ~ .p3{
+    animation: anim 1s forwards ;
+}
+#img4:checked ~ .p4{
+    animation: anim 1s forwards ;
+}
+#img5:checked ~ .p5{
+    animation: anim 1s forwards ;
+}
+
+@keyframes anim{
+    0%{
+        z-index: 0;
+    }
+
+    50%{
+        left: -70px;
+        transform: scale(1);
+    }
+    100%{
+        left: 550px;
+        z-index: 1;
+        transform: scale(1.2);
+    }
+}
+.p2{
+    width: 287px;
+    left: 180px;
+}
+.p3{
+    left: 250px;
+}
+.p4{
+    left: 320px;
+}
+.p5{
+    width: 334px;
+    left: 400px;
+}
+
+
+input{
+    display: none;
+}

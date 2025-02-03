@@ -1,0 +1,150 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(246, 198, 250);
+}
+
+main{
+    height: 700px;
+}
+
+footer{
+    background-color: rgb(70, 6, 70);
+    min-height: 400px;
+    box-shadow: 1px 1px 12px rgb(100, 3, 100);
+  
+}
+
+.up{
+    padding: 1.4rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border-bottom: 1px solid whitesmoke;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.heading{
+    font-size: 2rem;
+    font-weight: bold;
+    color: whitesmoke;
+    margin-top: 7px;
+}
+.links div{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all 0.5s ease;
+}
+.links div:hover{
+    background-color: whitesmoke;
+}
+
+.f{
+    background-color: rgb(20, 20, 116);
+}
+
+.s{
+    background-color: skyblue;
+}
+.t{
+    background-color: rgb(248, 37, 37);
+}
+.fr{
+    background-color: rgb(40, 40, 253);
+}
+.ff{
+    background-color: rgb(255, 0, 0);
+}
+.mid{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    padding: 1.2rem 4rem;
+    color: rgba(230, 227, 227, 0.753);
+    min-height: 200px;
+    margin-bottom: 20px;
+}
+.heading-mid{
+    color: whitesmoke;
+    font-size: 1.2rem;
+    position: relative;
+    padding-bottom: 4px;
+    white-space: nowrap;
+}
+.heading-mid::after{
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: aliceblue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.data{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+    margin-top: 10px;
+}
+.data div:hover{
+    color: whitesmoke;
+    text-decoration: underline;
+}
+.mid button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 0.3rem;
+    color: purple;
+    background-color: rgb(211, 211, 211);
+    border: none;
+    font-weight: bold;
+}
+.mid button:hover{
+    background-color: whitesmoke;
+}
+.mid input{
+    margin-top: 10px;
+    background: transparent;
+    border: none;
+    border: 1px solid gray;
+    padding: 0.5rem;
+    width: 100%;
+}
+.mid input:focus{
+    outline: 1px solid rgba(255, 192, 203, 0.678);
+}
+.down{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(53, 7, 53);
+    padding: 1.5rem 4rem;
+    color: whitesmoke;
+}
+.down span:hover{
+    text-decoration: underline;
+}
+
+@media (max-width:750px){
+    .mid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        row-gap: 10px;
+    }
+}
+
+@media (max-width:500px){
+    .mid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

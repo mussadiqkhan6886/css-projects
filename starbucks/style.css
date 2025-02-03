@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: lemonchiffon;
+    padding: 2rem;
+}
+header h2{
+    color: rgb(172, 3, 3);
+}
+header p {
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.page{
+    border: 1px solid gray;
+    padding: 1rem;
+}
+table th{
+    text-align: right;
+    vertical-align: top;
+    padding: 2px 10px 0px 0px;
+    white-space: nowrap;
+}
+td{
+    vertical-align: top;
+    padding-bottom: 15px;
+}
+table table td{
+    text-align: right;
+    padding-bottom: 4px;
+}
+.border{
+    border: none;
+    box-shadow: inset 1px 2px 3px rgba(128, 128, 128, 0.37);
+    padding: 0.2rem;
+}
+.border:focus{
+    outline: none;
+}
+button{
+    border-radius: 15px;
+    padding: 0.1rem 0.3rem;
+    border: 1px solid gray;
+    margin: 1rem 0;
+}

@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    background: url(ded2b56c3313f1125a8545b06b6263e3.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+.section{
+    width: 240px;
+    height: 100vh;
+    background-color: rgba(240, 248, 255, 0.226);
+    position: fixed;
+    top: 0;
+    left: -250px;
+    transition: all 0.7s;
+}
+.click{
+    width: 50px;
+    height: 50px;
+    transition: opacity 0.5s;
+}
+.click:focus-within + .section{
+    left: 0;
+    top: 0;
+}
+.click:focus-within{
+    opacity: 0;
+}
+
+.top{
+    border-bottom: 1px solid aliceblue;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.text{
+    letter-spacing: 1px;
+    font-size: clamp(1rem, 1vw + 0.7rem , 2rem);
+}
+.button:hover{
+    cursor: pointer;
+}
+.button{
+    background-color: transparent;
+    border: none;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    margin-bottom: 2px;
+}
+.button::after,
+.button::before{
+    background-color: black;
+    width: 17px;
+    height: 4px;
+    position: absolute;
+}
+.button::after,
+.button::before{
+    content: '';
+}
+
+.down div{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: gray;
+    margin-right: 5px;
+}
+.down{
+    display: flex;
+    justify-content: center;
+}
+
+
+.button::before{
+    transform: translateY(-12px);
+    transform: rotate(50deg);
+}
+.button::after{
+    transform: rotate(-50deg);
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0rem 0rem 0rem;
+    height: 550px;
+}
+.f{
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    border: 0.2px solid transparent;
+    border-left: 2px solid transparent;
+}
+.f img{
+    margin-right: 12px;
+}
+
+.menubar{
+    position: absolute;
+}
+.menubar button{
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin-left: 10px;
+}
+
+.menu-ham,
+.menu-ham::before,
+.menu-ham::after{
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background-color: rgb(223, 223, 223);
+    display: flex;
+    cursor: pointer;
+    
+}
+.menu-ham::after,
+.menu-ham::before{
+    content: "";
+}
+.menu-ham::after{
+    transform: translateY(-12px);
+}
+.menu-ham::before{
+    transform: translateY(12px);
+}
+.f:hover{
+    border: 0.2px solid aliceblue;
+    border-left: 2px solid aliceblue;
+    cursor: pointer;
+}
+.b:hover{
+    background-color: rgb(177, 177, 177);
+    cursor: pointer;
+}

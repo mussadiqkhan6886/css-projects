@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    font-family: sans-serif;
+    background-color: rgb(57, 170, 106);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: white;
+    margin: 1rem;
+    width: 330px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px gray;
+}
+.heading{
+    background-color: seagreen;
+    color: white;
+    font-size: clamp(1rem, 2vw + 1rem, 2rem);
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 5px 5px 0 0;
+    font-weight: bold;
+}
+.main-area{
+    padding: 1rem;
+}
+.form{
+    position: relative;
+}
+.input{
+    display: block;
+    padding: 12px 0px 12px 45px;
+    margin-bottom: 15px;
+    width: 100%;
+    border: none;
+    border: 1px solid rgba(128, 128, 128, 0.486);
+}
+.input:focus{
+    outline: none;
+    outline: 1px solid rgba(65, 199, 123, 0.486);
+    border-radius: 2px;
+}
+
+.label{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(57, 168, 105);
+    position: absolute;
+    left: -2px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+}
+.pass-forget{
+    color: rgb(61, 185, 115);
+    font-size: clamp(0.5rem, 1vw + 0.75rem, 1rem);
+    margin-bottom: 10px;
+}
+.pass-forget:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.login-button  input{
+    width: 100%;
+    padding: 0.75rem;
+    font-size: clamp(0.5rem, 1vw + 0.75rem, 1rem);
+    border: none;
+    background-color: rgb(65, 192, 120);
+    color: white;
+    border-radius: 3px;
+    transition: background-color 0.4s;
+}
+.login-button input:hover{
+    background-color: seagreen;
+    cursor: pointer;
+}
+.end{
+    text-align: center;
+    margin: 15px 0 0px 0;
+}
+.end a{
+    text-decoration: none;
+    color: rgb(61, 182, 113);
+    white-space: nowrap;
+}
+.end a:hover{
+    text-decoration: underline;
+}

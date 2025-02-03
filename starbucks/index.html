@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>The Starbuzz Bean Machine</h2>
+        <p>Fill out the form below and click " order now " to order.</p>
+    </header>
+    <div class="page">
+            <table>
+                <tr class="tr">
+                    <th>Choose your beans: </th>
+                    <td>
+                        <select name="beans">
+                            <option value="op1">House Blend</option>
+                            <option value="op2">Shade Grown Bolivia Supreme</option>
+                            <option value="op3">Organic Guatemala</option>
+                            <option value="op4">Kenya</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="tr">
+                    <th>Type: </th>
+                    <td>
+                        <input type="radio" name="bean type">Whole Bean
+                        <br>
+                        <input type="radio" name="bean type">Ground
+                    </td>
+                </tr>
+                <tr class="tr">
+                    <th>Extras: </th>
+                    <td>
+                        <input type="checkbox" name="extras">Gift Wrap
+                        <br>
+                        <input type="checkbox" name="extras">Include catalog with order
+                    </td>
+                </tr>
+                <tr class="tr">
+                    <th>Ship to: </th>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>Name: </td>
+                                <td>
+                                    <input class="border" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Address: </td>
+                                <td>
+                                    <input class="border" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>City: </td>
+                                <td>
+                                    <input class="border" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>State: </td>
+                                <td>
+                                    <input class="border" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Zip: </td>
+                                <td>
+                                    <input class="border" type="text">
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="tr">
+                    <th>Customer Comments: </th>
+                    <td>
+                        <textarea class="border" name="comments" cols="50" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td><button>Order Now</button></td>
+                </tr>
+            </table>
+    </div>
+</body>
+</html>

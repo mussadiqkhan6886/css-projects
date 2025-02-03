@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+*::selection{
+    background-color: rgb(250, 103, 103);
+    color: whitesmoke;
+}
+
+body{
+    background: linear-gradient(rgb(72, 255, 200), blue);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: white;
+    box-shadow: 2px 2px 4px gray;
+    padding: 1rem;
+    min-width: 330px;
+    min-height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.option{
+    background-color: rgba(194, 193, 193, 0.533);
+    margin-top: 10px;
+    padding: 13px;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.2s;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+.left input{
+    cursor: pointer;
+}
+.option .left input{
+    margin-right: 7px;
+}
+
+.option:hover{
+    background-color: rgba(255, 145, 222, 0.76);
+}
+.option label{
+    cursor: pointer;
+}
+.option:has(.left input[type="radio"]:checked){
+    border: 2px solid purple;
+    background-color: rgba(255, 145, 222, 0.76);;
+}

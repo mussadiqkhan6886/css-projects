@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    font-family: sans-serif;
+    background-color: rgb(216, 216, 216);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: white;
+    margin: 1rem;
+    width: 330px;
+    min-height: 370px;
+    border-radius: 7px;
+    box-shadow: 2px 3px 10px rgba(128, 128, 128, 0.76);
+}
+.heading{
+    background: linear-gradient(to right, rgb(38, 0, 128), rgb(235, 56, 190));
+    color: white;
+    font-size: clamp(1rem, 2vw + 1rem, 2rem);
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 5px 5px 0 0;
+    font-weight: bold;
+}
+.main-area{
+    padding: 1rem;
+}
+.field{
+    position: relative;
+}
+.input{
+    padding: 12px 0px 12px 12px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.274);
+    border-radius: 30px;
+}
+.input:focus{
+    outline: none;
+}
+.input:focus ~ .label{
+    top: -7px;
+    background-color: white;
+    font-size: 0.9rem;
+}
+
+.label{
+    position: absolute;
+    color: rgba(128, 128, 128, 0.822);
+    pointer-events: none;
+    left: 15px;
+    top: 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+.line{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.pass-forget{
+    color: rgb(61, 73, 185);
+    font-size: clamp(0.4rem, 1vw + 0.7rem, 0.92rem);
+    display: inline-block;
+}
+.pass-forget:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.login-button  input{
+    width: 100%;
+    padding: 0.75rem;
+    font-size: clamp(0.5rem, 1vw + 0.75rem, 1rem);
+    border: none;
+    background: linear-gradient(to right, rgb(38, 0, 128), rgb(235, 56, 190));
+    color: white;
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.473);
+    transition: all 0.4s;
+}
+.login-button input:hover{
+    cursor: pointer;
+}
+.login-button input:active{
+    transform: scale(0.97);
+}
+.end{
+    text-align: center;
+    margin: 24px 0 0px 0;
+}
+.end a{
+    text-decoration: none;
+    color: rgb(43, 17, 187);
+    white-space: nowrap;
+}
+.end a:hover{
+    text-decoration: underline;
+}
